@@ -1,0 +1,53 @@
+import { Meta } from '@storybook/react';
+import { AutoComplete } from './AutoComplete';
+import * as React from 'react';
+declare const _default: Meta<typeof AutoComplete>;
+export default _default;
+export declare const Default: import('@storybook/core/csf').AnnotatedStoryFn<import('@storybook/react').ReactRenderer, {
+    ref?: React.RefObject<HTMLInputElement | null>;
+    id?: string;
+    name?: string;
+    options: (import('../select.types').SelectOption<string | number> | import('../select.types').SelectOptionGroup<string | number>)[];
+    value?: string | number | null | undefined;
+    onChange?: ((value: string | number | null) => void) | undefined;
+    defaultValue?: string | number | null | undefined;
+    clearable?: boolean;
+    placeholder?: string;
+    disabled?: boolean;
+} & import('../..').InputControlProps>;
+export declare const Danger: import('@storybook/core/csf').AnnotatedStoryFn<import('@storybook/react').ReactRenderer, {
+    ref?: React.RefObject<HTMLInputElement | null>;
+    id?: string;
+    name?: string;
+    options: (import('../select.types').SelectOption<string | number> | import('../select.types').SelectOptionGroup<string | number>)[];
+    value?: string | number | null | undefined;
+    onChange?: ((value: string | number | null) => void) | undefined;
+    defaultValue?: string | number | null | undefined;
+    clearable?: boolean;
+    placeholder?: string;
+    disabled?: boolean;
+} & import('../..').InputControlProps>;
+export declare const Clearable: import('@storybook/core/csf').AnnotatedStoryFn<import('@storybook/react').ReactRenderer, {
+    ref?: React.RefObject<HTMLInputElement | null>;
+    id?: string;
+    name?: string;
+    options: (import('../select.types').SelectOption<string | number> | import('../select.types').SelectOptionGroup<string | number>)[];
+    value?: string | number | null | undefined;
+    onChange?: ((value: string | number | null) => void) | undefined;
+    defaultValue?: string | number | null | undefined;
+    clearable?: boolean;
+    placeholder?: string;
+    disabled?: boolean;
+} & import('../..').InputControlProps>;
+export declare const OptionGroup: import('@storybook/core/csf').AnnotatedStoryFn<import('@storybook/react').ReactRenderer, {
+    ref?: React.RefObject<HTMLInputElement | null>;
+    id?: string;
+    name?: string;
+    options: (import('../select.types').SelectOption<string | number> | import('../select.types').SelectOptionGroup<string | number>)[];
+    value?: string | number | null | undefined;
+    onChange?: ((value: string | number | null) => void) | undefined;
+    defaultValue?: string | number | null | undefined;
+    clearable?: boolean;
+    placeholder?: string;
+    disabled?: boolean;
+} & import('../..').InputControlProps>;

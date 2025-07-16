@@ -1,0 +1,10 @@
+import { Meta } from '@storybook/react';
+import { TextInput } from './TextInput';
+declare const _default: Meta<typeof TextInput>;
+export default _default;
+export declare const Default: import('@storybook/core/csf').AnnotatedStoryFn<import('@storybook/react').ReactRenderer, import('../../../../node_modules/react').ClassAttributes<HTMLInputElement> & import('../../../../node_modules/react').InputHTMLAttributes<HTMLInputElement> & import('..').InputControlProps>;
+export declare const Hint: import('@storybook/core/csf').AnnotatedStoryFn<import('@storybook/react').ReactRenderer, import('../../../../node_modules/react').ClassAttributes<HTMLInputElement> & import('../../../../node_modules/react').InputHTMLAttributes<HTMLInputElement> & import('..').InputControlProps>;
+export declare const Success: import('@storybook/core/csf').AnnotatedStoryFn<import('@storybook/react').ReactRenderer, import('../../../../node_modules/react').ClassAttributes<HTMLInputElement> & import('../../../../node_modules/react').InputHTMLAttributes<HTMLInputElement> & import('..').InputControlProps>;
+export declare const Danger: import('@storybook/core/csf').AnnotatedStoryFn<import('@storybook/react').ReactRenderer, import('../../../../node_modules/react').ClassAttributes<HTMLInputElement> & import('../../../../node_modules/react').InputHTMLAttributes<HTMLInputElement> & import('..').InputControlProps>;
+export declare const Required: import('@storybook/core/csf').AnnotatedStoryFn<import('@storybook/react').ReactRenderer, import('../../../../node_modules/react').ClassAttributes<HTMLInputElement> & import('../../../../node_modules/react').InputHTMLAttributes<HTMLInputElement> & import('..').InputControlProps>;
+export declare const Disabled: import('@storybook/core/csf').AnnotatedStoryFn<import('@storybook/react').ReactRenderer, import('../../../../node_modules/react').ClassAttributes<HTMLInputElement> & import('../../../../node_modules/react').InputHTMLAttributes<HTMLInputElement> & import('..').InputControlProps>;

@@ -1,0 +1,20 @@
+import { default as ReactSelect } from 'react-select';
+import { InputControlProps } from '../control/Control';
+import { SelectOption } from './select.types';
+import { ChipTheme } from '../chips/Chip';
+import * as React from 'react';
+type MultiSelectProps<V extends string | number> = InputControlProps & {
+    label: string;
+    name?: string;
+    placeholder?: string;
+    noOptionsMessage?: React.ComponentProps<typeof ReactSelect>['noOptionsMessage'];
+    options: SelectOption<V>[];
+    value?: SelectOption<V>[];
+    onChange?: (newOptions: SelectOption<V>[]) => void;
+    required?: boolean;
+    defaultValue?: V[];
+    selectAllDisabled?: boolean;
+    valueTheme?: ChipTheme;
+};
+export declare function MultiSelect<V extends string | number>({ name, placeholder, options, value, required, disabled, defaultValue, selectAllDisabled, onChange, noOptionsMessage, valueTheme, ...controlProps }: MultiSelectProps<V>): import("react/jsx-runtime").JSX.Element;
+export {};

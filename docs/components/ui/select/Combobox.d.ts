@@ -1,0 +1,31 @@
+import { default as ReactSelect, SelectInstance } from 'react-select';
+import { InputControlProps } from '../control/Control';
+import { SelectOption } from './select.types';
+import * as React from 'react';
+type OptionGroup<Value extends string | number> = {
+    label: string;
+    options: SelectOption<Value>[];
+};
+type ComboboxProps<V extends string | number> = Omit<InputControlProps, 'label'> & {
+    name?: string;
+    placeholder?: string;
+    noOptionsMessage?: React.ComponentProps<typeof ReactSelect>['noOptionsMessage'];
+    options: (SelectOption<V> | OptionGroup<V>)[];
+    value?: SelectOption<V> | null;
+    onChange?: (newOption: SelectOption<V> | null) => void;
+    isSearchable?: boolean;
+    defaultValue?: SelectOption<V>;
+    selectRef?: React.RefObject<SelectInstance<SelectOption<V>, false> | null>;
+    filterOption?: React.ComponentProps<typeof ReactSelect>['filterOption'];
+    searchOnlyByLabel?: boolean;
+    defaultEmpty?: boolean;
+    isClearable?: boolean;
+    isDisabled?: boolean;
+    required?: boolean;
+    autoFocus?: boolean;
+    menuIsOpen?: boolean;
+    inputId?: string;
+    isSolid?: boolean;
+};
+export declare function Combobox<V extends string | number>({ name, placeholder, options, value, required, isSearchable, defaultValue, isDisabled, onChange, noOptionsMessage, selectRef: extRef, defaultEmpty, searchOnlyByLabel, filterOption, inputId, autoFocus, menuIsOpen, isSolid, ...controlProps }: ComboboxProps<V>): import("react/jsx-runtime").JSX.Element;
+export {};

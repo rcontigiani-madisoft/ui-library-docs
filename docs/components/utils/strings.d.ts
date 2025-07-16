@@ -1,0 +1,16 @@
+export declare function doubleDigit(num: number): string;
+export declare function ellipsize(str: string, maxLength: number): string;
+export declare function slugify(str: string): string;
+export declare function isHTML(str: string): boolean;
+export declare function htmlToText(html: string): string;
+export declare function matchesSearchTerm(text: string, searchTerm: string): boolean;
+export declare function formatSchoolYear(year: number | string): string;
+export declare const capitalizeFirstLetter: (text: string) => string;
+export declare function initials(text?: string | null): string;
+export declare function stringHashCode(str: string): number;
+export declare function joinStrings(strings: (string | undefined | null)[], separator?: string): string;
+export declare function formatPercentage(value?: string | number): string | undefined;
+export declare function shortId(length?: number): string;
+export declare function pluralize(count: number, pattern: string): string;
+export declare function pluralize(count: number, singular: string, plural: string): string;
+export declare const maybeTextWithPrefix: (prefix: string) => (text?: string) => string | "";

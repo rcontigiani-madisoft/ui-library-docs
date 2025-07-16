@@ -1,0 +1,4 @@
+import{j as c}from"./jsx-runtime-D_zvdyIk.js";import{r as m}from"./index-DatCARk7.js";import{M as s}from"./MonthPicker-D89dfM91.js";import"./date-DLO9q3mC.js";import"./string-BWSckzgf.js";import"./styled-components.browser.esm-DD6bt04G.js";import"./DateHandle-BqCLvfPI.js";import"./Button-bb1s2N95.js";import"./Flex-DwwaOy33.js";import"./isNewDesignEnabled-CECVVFcR.js";import"./Icon-BDJ5phNo.js";const P={title:"Date & Time/Month Picker",component:s},i=()=>{const[a,n]=m.useState(new Date);return c.jsx(s,{selected:a,onSelect:n})},t=i.bind({});t.args={};var e,r,o;t.parameters={...t.parameters,docs:{...(e=t.parameters)==null?void 0:e.docs,source:{originalSource:`() => {
+  const [date, setDate] = React.useState(new Date());
+  return <MonthPicker selected={date} onSelect={setDate} />;
+}`,...(o=(r=t.parameters)==null?void 0:r.docs)==null?void 0:o.source}}};const j=["Default"];export{t as Default,j as __namedExportsOrder,P as default};

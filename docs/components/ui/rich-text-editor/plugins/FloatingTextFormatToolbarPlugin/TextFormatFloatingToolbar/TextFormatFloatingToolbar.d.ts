@@ -1,0 +1,20 @@
+import { LexicalEditor } from 'lexical';
+import { Dispatch } from '../../../../../../../node_modules/react';
+import { RichTextEditorConfigs } from '../../../RichTextEditor';
+declare const TextFormatFloatingToolbar: ({ editor, anchorElem, isLink, isBold, isItalic, isUnderline, isUppercase, isLowercase, isCapitalize, isStrikethrough, isSubscript, isSuperscript, setIsLinkEditMode, config, }: {
+    editor: LexicalEditor;
+    anchorElem: HTMLElement;
+    isBold: boolean;
+    isItalic: boolean;
+    isLink: boolean;
+    isUppercase: boolean;
+    isLowercase: boolean;
+    isCapitalize: boolean;
+    isStrikethrough: boolean;
+    isSubscript: boolean;
+    isSuperscript: boolean;
+    isUnderline: boolean;
+    setIsLinkEditMode: Dispatch<boolean>;
+    config: RichTextEditorConfigs;
+}) => import("react/jsx-runtime").JSX.Element;
+export { TextFormatFloatingToolbar };

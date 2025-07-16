@@ -1,0 +1,10 @@
+export declare const DEFAULT_PAGE_SIZE = 25;
+export declare const DEFAULT_MAX_PAGE_SIZE = 250;
+export declare const PAGE_SIZES: number[];
+export declare const DEFAULT_PAGE_RANGE_DISPLAYED = 5;
+export declare const MIN_SEARCH_LENGTH = 3;
+export declare const AUTOCOMPLETE_DEBOUNCE_TIME = 500;
+export declare const RENDER_CHUNK_SIZE = 10;
+export declare const ROW_AUTOSCROLL_KEY = "ngrid-autoscroll";
+export declare const DEFAULT_MAX_BULK_ACTION_SELECTABLE_ITEMS = 250;
+export declare const UNREAD_CLASSNAME = "ngrid__row--unread";

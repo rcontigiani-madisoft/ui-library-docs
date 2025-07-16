@@ -1,0 +1,18 @@
+export declare function arrayAddOrRemove<T, K>(array: T[], item: T, keySelector?: (item: T) => K): T[];
+export declare function arrayDelete<T, K>(array: T[], item: T, keySelector?: (item: T) => K): T[];
+export declare function arrayAddUnique<T, K>(array: T[], item: T, keySelector?: (item: T) => K): T[];
+export declare function arrayInsertAt<T>(array: T[], index: number, ...items: T[]): T[];
+export declare function arrayUpdate<T, K>(array: T[], item: T, keySelector?: (item: T) => K): T[];
+export declare function arrayMoveItemAtIndex<T>(array: T[], srcIndex: number, destIndex: number): T[];
+export declare function arrayDeleteAtIndex<T>(array: T[], index: number): T[];
+export declare function arrayUpdateAtIndex<T>(array: T[], item: T, index: number): T[];
+export declare function range(length: number, startAt?: number): Array<number>;
+export declare function arrayOf<T>(length: number, factory: (index: number) => T): T[];
+export declare function arrayEquals<T>(array1: Array<T>, array2: Array<T>): boolean;
+export declare function arrayChunk<T>(array: T[], chunkSize?: number): T[][];
+export declare function groupBy<T, K extends string | number | symbol>(array: T[], keySelector: (item: T) => K): Record<K, T[]>;
+export declare function arrayConcatUnique<T, K>(array1: T[], array2: T[], keySelector?: (item: T) => K): T[];
+export declare function arrayToDictionary<T, K extends string | number | symbol, V>(array: T[], keySelector: (item: T) => K, valueSelector: (item: T) => V): Record<K, V>;
+export declare function arrayDistinct<T>(array: T[]): T[];
+export declare function arrayDistinctBy<T, K>(array: T[], keySelector: (item: T) => K): T[];
+export declare function arrayAt<T>(array: T[], index: number): T;

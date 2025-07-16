@@ -1,0 +1,22 @@
+import { Entity, GridColumn, GridProps, GridState } from '../typings';
+type SavedState<T extends Entity> = Omit<GridState<T>, "status" | "data" | "count" | "selected">;
+export declare function useRestoredState<T extends Entity>(props: Pick<GridProps<T>, "id" | "ajaxUrl" | "columns" | "noSession">): {
+    columns: GridColumn<T>[];
+    search?: string | undefined;
+    error?: Error | undefined;
+    offset: number;
+    schema?: import('json-schema').JSONSchema7 | undefined;
+    stickyHeader?: boolean | undefined;
+    extraActions?: import('../typings').DataAction[] | undefined;
+    relatedFields?: string[] | undefined;
+    actions?: import('../typings').DataAction[] | undefined;
+    loadingRows: string[];
+    pendingColumns: string[];
+    orderBy?: import('../typings').GridSorting[] | undefined;
+    filters?: Record<string, import('../typings').GridFilter<string | number | boolean>> | undefined;
+    limit: number;
+    ellipsisEnabled?: boolean | undefined;
+    completedTutorials?: string[] | undefined;
+} | null;
+export declare function useSavedState<T extends Entity>(id: string): SavedState<T> | null;
+export {};
