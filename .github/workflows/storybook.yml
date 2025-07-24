@@ -34,12 +34,6 @@ jobs:
       - name: Build Storybook
         run: npm run build-storybook
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-        with:
-          static_site_generator: storybook
-          enablement: true
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
