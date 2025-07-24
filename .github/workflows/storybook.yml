@@ -1,9 +1,9 @@
-name: Deploy Storybook to GitHub Pages
+name: Storybook GitHub Pages
 
 on:
   push:
     branches:
-      - main # O il branch su cui lavori per lo sviluppo di Storybook
+      - main
 
 jobs:
   deploy:
@@ -14,7 +14,7 @@ jobs:
       id-token: write
 
     environment:
-      name: github-pages
+      name: Storybook GitHub Pages
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
@@ -23,22 +23,22 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Set up Node.js
+      - name: Configura node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
 
-      - name: Install dependencies
+      - name: Installa dipendenze
         run: npm ci
 
       - name: Build Storybook
         run: npm run build-storybook
 
-      - name: Upload artifact
+      - name: Upload pages
         uses: actions/upload-pages-artifact@v3
         with:
           path: storybook-static
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy su GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
