@@ -1,1 +1,0 @@
-import"./string-BWSckzgf.js";function a(r,t,o){const i=Array.isArray(t)?t:t.match(/([^[.\]])+/g);if(!i)return r;i.reduce((n,e,s)=>(n[e]===void 0&&(n[e]={}),s===i.length-1&&(n[e]=o),n[e]),r)}function f(r){return JSON.parse(JSON.stringify(r))}function p(r,t){return Object.prototype.hasOwnProperty.call(r,t)}export{f as d,p as h,a as s};
